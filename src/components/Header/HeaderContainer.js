@@ -10,10 +10,10 @@ class HeaderContainer extends Component {
     return (
       <div className='container headerContainer'>
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-xs-4">
             <HeaderBrand brandName={AppCopy.BrandName} />
           </div>
-          <div className="col-md-8">
+          <div className="col-xs-8">
             <HeaderInfo />
           </div>
         </div>
