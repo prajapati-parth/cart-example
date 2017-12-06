@@ -10,7 +10,7 @@ const HeaderInfo = (props) => {
       <Link to='/cart'>
         <div className='shoppingCartContainer'>
           <ShoppingCart size={24} />
-          <span className='cartItems'>{props.itemsCount || 0}</span>
+          <span className='cartItems'>{props.itemsCount}</span>
         </div>
       </Link>
     </div>

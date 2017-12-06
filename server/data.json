@@ -1,0 +1,120 @@
+{
+  "cart": [
+    {
+      "id": 1,
+      "name": "Saco hard disk wallet",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71OA8YgRkEL._SL500_SR116,135_.jpg",
+      "price": "Rs. 280"
+    },
+    {
+      "id": 2,
+      "name": "Bean bag refill",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61p7lrFd3rL._SL500_SR135,135_.jpg",
+      "price": "Rs. 469"
+    },
+    {
+      "id": 3,
+      "name": "Scandisk 16gb",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61X0-4Z0E2L._SL500_SR135,135_.jpg",
+      "price": "Rs. 895"
+    }
+  ],
+  "shop": [
+    {
+      "id": 1,
+      "name": "Saco hard disk wallet",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71OA8YgRkEL._SL500_SR116,135_.jpg",
+      "price": "Rs. 280"
+    },
+    {
+      "id": 2,
+      "name": "Bean bag refill",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61p7lrFd3rL._SL500_SR135,135_.jpg",
+      "price": "Rs. 469"
+    },
+    {
+      "id": 3,
+      "name": "Scandisk 16gb",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61X0-4Z0E2L._SL500_SR135,135_.jpg",
+      "price": "Rs. 895"
+    },
+    {
+      "id": 4,
+      "name": "Philips Beard Trimmer",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61gIL215KZL._SL500_SR76,135_.jpg",
+      "price": "Rs. 1499"
+    },
+    {
+      "id": 5,
+      "name": "Comfy Bean Bag",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71W%2Bktpbf9L._SL500_SR135,135_.jpg",
+      "price": "Rs. 349"
+    },
+    {
+      "id": 6,
+      "name": "Air-case AP-MS",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51JiM4ZlhcL._SL500_SR135,135_.jpg",
+      "price": "Rs. 869"
+    },
+    {
+      "id": 7,
+      "name": "Logitech M235 wireless mouse",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81v3qgpG%2BqL._SL500_SR135,135_.jpg",
+      "price": "Rs. 630"
+    },
+    {
+      "id": 8,
+      "name": "WD MyPassport 1TB",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91ESESqLpmL._SL500_SR135,135_.jpg",
+      "price": "Rs. 3780"
+    },
+    {
+      "id": 9,
+      "name": "New Saco hard disk wallet",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71OA8YgRkEL._SL500_SR116,135_.jpg",
+      "price": "Rs. 280"
+    },
+    {
+      "id": 10,
+      "name": "New Bean bag refill",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61p7lrFd3rL._SL500_SR135,135_.jpg",
+      "price": "Rs. 469"
+    },
+    {
+      "id": 11,
+      "name": "New Scandisk 16gb",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61X0-4Z0E2L._SL500_SR135,135_.jpg",
+      "price": "Rs. 895"
+    },
+    {
+      "id": 12,
+      "name": "New Philips Beard Trimmer",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61gIL215KZL._SL500_SR76,135_.jpg",
+      "price": "Rs. 1499"
+    },
+    {
+      "id": 13,
+      "name": "New Comfy Bean Bag",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71W%2Bktpbf9L._SL500_SR135,135_.jpg",
+      "price": "Rs. 349"
+    },
+    {
+      "id": 14,
+      "name": "New Air-case AP-MS",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51JiM4ZlhcL._SL500_SR135,135_.jpg",
+      "price": "Rs. 869"
+    },
+    {
+      "id": 15,
+      "name": "New Logitech M235 wireless mouse",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81v3qgpG%2BqL._SL500_SR135,135_.jpg",
+      "price": "Rs. 630"
+    },
+    {
+      "id": 16,
+      "name": "New WD MyPassport 1TB",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91ESESqLpmL._SL500_SR135,135_.jpg",
+      "price": "Rs. 3780"
+    }
+  ]
+}
