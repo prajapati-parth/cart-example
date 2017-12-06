@@ -1,0 +1,24 @@
+@import '../../../utils/AppTheme.less';
+
+.headerInfoContainer {
+  float: right;
+}
+
+.shoppingCartContainer {
+  padding: 20px 10px;
+  display: flex;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: @focus-grey;
+    cursor: pointer;
+    border: 1px solid @focus-grey;
+  }
+}
+
+.cartItems {
+  background-color: @app-theme;
+  color: @white-base;
+  padding: 6px 10px;
+  margin-left: 7px;
+  border-radius: 15px;
+}

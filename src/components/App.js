@@ -1,8 +1,14 @@
 import React from 'react'
 
+import Header from './Header'
+
+import './App.less'
+
 const App = () => {
   return (
-    <h1>Configured React!</h1>
+    <div className="appContainer container-fluid">
+      <Header />
+    </div>
   )
 }
 

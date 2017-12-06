@@ -30,6 +30,10 @@ module.exports = {
                 presets: ['env']
             }
         }
+      },
+      {
+        test: /(\.less|\.css)$/,
+        use: ['style-loader', 'css-loader', 'less-loader']
       }
     ]
   }
