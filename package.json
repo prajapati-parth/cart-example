@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server --config webpack.dev.config.js",
-    "json-server-start": "json-server ./server/data.json",
+    "json-server-start": "./node_modules/.bin/json-server ./server/data.json",
     "start": "npm run json-server-start"
   },
   "author": "parth17prajapati@gmail.com",
