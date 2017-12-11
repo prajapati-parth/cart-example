@@ -1,27 +1,21 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
 import HeaderBrand from './HeaderBrand'
 import HeaderInfo from './HeaderInfo'
 
 import AppCopy from '../../utils/AppCopy'
-
 import DataService from '../../service/DataService'
+import * as CartSelectors from '../../store/reducers/cart'
+import * as CartActions from '../../store/actions/cart'
 
 class HeaderContainer extends Component {
-  constructor() {
-    super()
-
-    this.state = {
-      cartItemsCount: 0
-    }
-  }
-
   componentWillMount() {
     DataService.getData('http://localhost:3000/cart').then(data => {
       if (data && data.length) {
-        this.setState({
-          cartItemsCount: data.length
-        })
+        this.props.dispatch(
+          CartActions.updateCartCount(data.length)
+        )
       }
     })
   }
@@ -34,7 +28,7 @@ class HeaderContainer extends Component {
             <HeaderBrand brandName={AppCopy.BrandName} />
           </div>
           <div className="col-xs-8">
-            <HeaderInfo itemsCount={this.state.cartItemsCount} />
+            <HeaderInfo itemsCount={this.props.cartCount} />
           </div>
         </div>
       </div>
@@ -42,4 +36,10 @@ class HeaderContainer extends Component {
   }
 }
 
-export default HeaderContainer
+function mapStateToProps(state) {
+  return {
+    cartCount: CartSelectors.getCartCount(state)
+  }
+}
+
+export default connect(mapStateToProps)(HeaderContainer)

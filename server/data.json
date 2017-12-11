@@ -1,25 +1,19 @@
 {
   "cart": [
     {
-      "id": 1,
-      "name": "Saco hard disk wallet",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/71OA8YgRkEL._SL500_SR116,135_.jpg",
-      "price": "Rs. 280"
-    },
-    {
       "id": 2,
       "name": "Bean bag refill",
       "image": "https://images-na.ssl-images-amazon.com/images/I/61p7lrFd3rL._SL500_SR135,135_.jpg",
       "price": "Rs. 469"
     },
     {
-      "id": 3,
       "name": "Scandisk 16gb",
       "image": "https://images-na.ssl-images-amazon.com/images/I/61X0-4Z0E2L._SL500_SR135,135_.jpg",
-      "price": "Rs. 895"
+      "price": "Rs. 895",
+      "id": 3
     },
     {
-      "name": "New Bean bag refill",
+      "name": "Bean bag refill",
       "image": "https://images-na.ssl-images-amazon.com/images/I/61p7lrFd3rL._SL500_SR135,135_.jpg",
       "price": "Rs. 469",
       "id": 4

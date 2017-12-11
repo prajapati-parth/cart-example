@@ -1,27 +1,28 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
 import ShopItems from './ShopItems'
 
 import DataService from '../../service/DataService'
+import * as ShopSelectors from '../../store/reducers/shop'
+import * as ShopActions from '../../store/actions/shop'
+import * as CartSelectors from '../../store/reducers/cart'
+import * as CartActions from '../../store/actions/cart'
 
 class Shop extends Component {
-  constructor() {
-    super()
-
-    this.state = {
-      shopItems: []
-    }
-  }
-
   render() {
-    return <ShopItems
-      items={this.state.shopItems}
-      addToCart={this.handleAddToCart.bind(this)}
-      loadMoreData={this.handleLoadMoreData.bind(this)} />
+    return (
+      <div>
+        <ShopItems
+          items={this.props.shopItems}
+          addToCart={this.handleAddToCart.bind(this)}
+          loadMoreData={this.handleLoadMoreData.bind(this)} />
+      </div>
+    )
   }
 
   handleAddToCart(id) {
-    let itemToAdd = this.state.shopItems.find(item => item.id === id),
+    let itemToAdd = this.props.shopItems.find(item => item.id === id),
       requestBody = {
         name: itemToAdd.name,
         image: itemToAdd.image,
@@ -30,18 +31,25 @@ class Shop extends Component {
     
     //API request
     DataService.addToCart(requestBody).then(data => {
-      console.log(data)
+      let newCount = this.props.cartCount + 1
+      this.props.dispatch(
+        CartActions.updateCartCount(newCount)
+      )
     })
   }
 
   handleLoadMoreData(pageSize) {
-    DataService.getData(`http://localhost:3000/shop?_limit=6&_page=${pageSize}`).then(data => {
-      let newData = this.state.shopItems.concat(data)
-      this.setState({
-        shopItems: newData
-      })
-    })
+    this.props.dispatch(
+      ShopActions.updateShopItems(pageSize, this.props.shopItems)
+    )
   }
 }
 
-export default Shop
+function mapStateToProps(state) {
+  return {
+    shopItems: ShopSelectors.getShopItems(state),
+    cartCount: CartSelectors.getCartCount(state)
+  }
+}
+
+export default connect(mapStateToProps)(Shop)
