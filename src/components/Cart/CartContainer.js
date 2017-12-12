@@ -23,7 +23,13 @@ class CartContainer extends Component {
   }
 
   render() {
-    return <CartItems items={this.props.cartItems} handleItemRemove={this.handleItemRemove.bind(this)} />
+    return (
+      <div className='container'>
+        <h2>Cart</h2>
+        <hr />
+        <CartItems items={this.props.cartItems} handleItemRemove={this.handleItemRemove.bind(this)} />
+      </div>
+    )
   }
 
   handleItemRemove(id) {

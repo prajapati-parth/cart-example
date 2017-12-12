@@ -10,7 +10,7 @@ export const updateCartCount = (newCount) => {
 
 export const updateCart = () => {
   return dispatch => {
-    DataService.getData('http://localhost:3000/cart').then(data => {
+    DataService.getData('https://cart-example-api-heroku.herokuapp.com/cart').then(data => {
       dispatch({
         type: ActionTypes.UPDATE_CART,
         cartItems: data

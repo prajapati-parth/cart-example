@@ -12,7 +12,9 @@ import * as CartActions from '../../store/actions/cart'
 class Shop extends Component {
   render() {
     return (
-      <div>
+      <div className='container'>
+        <h2>Shop</h2>
+        <hr />
         <ShopItems
           items={this.props.shopItems}
           addToCart={this.handleAddToCart.bind(this)}

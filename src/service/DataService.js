@@ -17,7 +17,7 @@ class DataService {
     }
     formData = formData.substring(0, formData.length-1)
 
-    return fetch('http://localhost:3000/cart', {
+    return fetch('https://cart-example-api-heroku.herokuapp.com/cart', {
       method: 'POST',
       headers: {
 				'Content-type': 'application/x-www-form-urlencoded; charset=UTF-8'
@@ -28,7 +28,7 @@ class DataService {
   }
 
   removeFromCart(id) {
-    return fetch(`http://localhost:3000/cart/${id}`, {
+    return fetch(`https://cart-example-api-heroku.herokuapp.com/cart/${id}`, {
       method: 'DELETE',
       headers: {
 				'Content-type': 'application/json'

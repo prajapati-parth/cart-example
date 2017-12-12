@@ -11,7 +11,7 @@ import * as CartActions from '../../store/actions/cart'
 
 class HeaderContainer extends Component {
   componentWillMount() {
-    DataService.getData('http://localhost:3000/cart').then(data => {
+    DataService.getData('https://cart-example-api-heroku.herokuapp.com/cart').then(data => {
       if (data && data.length) {
         this.props.dispatch(
           CartActions.updateCartCount(data.length)

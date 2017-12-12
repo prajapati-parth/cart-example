@@ -5,7 +5,7 @@ import Product from '../../Product'
 class CartItems extends Component {
   render() {
     return (
-      <div className='cartItemsContainer container'>
+      <div className='cartItemsContainer'>
         <div className='row'>
           {
             this.props.items.map(item => (

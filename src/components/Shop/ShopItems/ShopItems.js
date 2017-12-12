@@ -6,7 +6,7 @@ import Product from '../../Product'
 class ShopItems extends Component {
   render() {
     return (
-      <div className='shopItemsContainer container'>
+      <div className='shopItemsContainer'>
         <div className='row'>
           <InfiniteScroll
             pageStart={0}

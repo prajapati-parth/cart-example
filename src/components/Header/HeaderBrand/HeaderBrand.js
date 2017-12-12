@@ -6,7 +6,7 @@ import './headerBrand.less'
 const HeaderBrand = (props) => {
   return (
     <div className='headerBrandContainer'>
-      <Link to='/'>
+      <Link to='/shop'>
         <h2 className='headerBrand'>{props.brandName}</h2>
       </Link>
     </div>
